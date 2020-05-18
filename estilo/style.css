@@ -1,0 +1,139 @@
+*{  /* tudo dentro de * é aplicado em todo o arquivo*/
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;; /*trabalhar com responsivo*/
+	font-family: "open sans";
+}
+
+
+/*Boot CSS class padrões de todo projeto*/
+
+.center{
+	max-width: 1280px;
+	padding:0 10%;
+	margin:0 auto;
+}
+
+.w33{
+	width: 33.3%;  /*para quando estiver tres blocos na mesma fileira*/
+}
+
+.w50{
+	width: 50%;
+}
+
+.borde{
+	border-radius: 10%;
+	width: 40%;
+	position: relative;
+	top:40px;
+	left: 60px; 
+}
+
+.left{
+	float: left;
+}
+
+.rigth{
+	float: right;
+}
+
+.clear{   /*para limpar flutuação e não ter problemas de espaçamento*/
+	clear: both;
+}
+
+/*Estilizacao do site*/
+header{
+	background: #3D437A;
+	padding: 20px 0;  /*10px acima e abaixo, 0 direita e esquerda*/
+}
+
+header .logo{
+	font-size: 25px;  /*tamanho da fonte*/
+	font-weight: 300; 
+	text-transform: uppercase;
+	color: white;
+}
+
+.mobile{
+	display: none;
+}
+
+nav.desktop ul{
+	position: relative; /*essas duas siguintes linhas serve para alinhar a logo com os links*/
+	top:6px;
+
+	list-style-type: none;
+}
+
+nav.desktop li{
+	font-weight: 300px;
+	font-size: 15px;
+	padding: 0 30px;
+	text-transform: uppercase; /*deixando tudo maiusculo*/
+	display: inline-block; /*bloco na mesma linha*/
+}
+
+nav.desktop a{
+	color:white;
+	text-decoration: none;
+}
+
+nav.desktop a:hover, nav.desktop a:active{
+	color:black;
+	text-decoration: underline;
+}
+
+/*ESTILIZANDO ICONES*/
+
+.iconCSS3{
+	font-size: 100px;
+	color:rgba(50, 166, 219);
+}
+
+.iconHTML {
+	font-size: 100px;
+	color:rgba(232, 123, 14);
+}
+
+.iconJAVA{
+	font-size: 100px;
+	color: rgba(237, 210, 38);
+}
+
+/*Estilizando Botão e caixa de texto*/
+.button1{
+	background-color: #4CAF50;
+	border:none;
+	color:white;
+	padding: 12px 32px;
+	text-align: center;
+	font-size: 16px;
+	display:inline-block;
+	border-radius: 5%;
+	position: relative; /*fica em cima de qualquer outra definição*/
+
+}
+
+.caixa_texto1{
+	padding: 10px 20%;
+	text-align: center;
+	position: relative;
+}
+
+
+section.banner-principal{
+	width: 100%;
+	height: 600px;
+	background-image:url('../imagem/imagem3.jpg');
+	background-size: cover; /*cobrir toda a tela, imagem sem repetição, responsivo também*/
+	position: relative;
+}
+.overlay{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(51,51,51,0.3); /*cor acinzentada emcima da imagem do banner-principal*/
+}
